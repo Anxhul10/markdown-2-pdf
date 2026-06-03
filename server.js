@@ -2,8 +2,14 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const { mdToPdf } = require('md-to-pdf');
+const puppeteer = require('puppeteer');
+
 
 app.use(bodyParser.text());
+
+app.get('/test', (req, res) => {
+  res.send(puppeteer.executablePath());
+});
 
 app.post('/', async (req, res) => {
   try {

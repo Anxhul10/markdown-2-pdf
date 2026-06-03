@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "express": "^5.2.1",
-    "md-to-pdf": "^5.2.5"
+    "md-to-pdf": "^5.2.5",
+    "puppeteer": "^24.43.1"
   }
 }
