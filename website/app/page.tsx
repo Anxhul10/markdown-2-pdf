@@ -1,7 +1,7 @@
 "use client";
 
+import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
-import { Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -54,7 +54,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Button variant="outline" size="icon">
-              <Camera className="h-5 w-5" />
+              <FaGithub className="h-5 w-5" />
             </Button>
           </a>
         </div>
