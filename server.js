@@ -3,8 +3,9 @@ const app = express();
 const bodyParser = require('body-parser');
 const { mdToPdf } = require('md-to-pdf');
 const puppeteer = require('puppeteer');
+const cors = require("cors");
 
-
+app.use(cors());
 app.use(bodyParser.text());
 
 app.get('/test', (req, res) => {
